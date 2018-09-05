@@ -3,6 +3,7 @@ import { StyleSheet, Text, Image,View,TouchableHighlight} from 'react-native';
 import InputIcon from '../components/InputIcon';
 
 class LoginScreen extends Component {
+    
     static navigationOptions={
                 header: null,
             }
@@ -36,7 +37,7 @@ class LoginScreen extends Component {
                   />
                   <TouchableHighlight
                       style={styles.btnLogin}
-                      onPress={() => this.props.navigation.navigate('Home', {
+                      onPress={() => this.props.navigation.navigate('List', {
                         username:this.state.username,
                         password: this.state.password,
                       })}
